@@ -1,0 +1,116 @@
+body {
+	background: #DCDCDC;
+}
+.titulo {
+	color: #4F4F4F;
+	font-size: 40px;
+	text-align: center;
+}
+
+.calc {
+	background: #696969;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px #1C1C1C;
+	display: grid;
+	grid-template-areas: 
+	"tela tela tela tela tela"
+	"sete oito nove divide apagar"
+	"quatro cinco seis vezes porcentagem"
+	"um dois tres menos igual"
+	"zero zerozero ponto mais igual";
+	grid-gap: 10px;
+	margin: 5vh auto;
+	padding: 15px;
+	width: 550px;
+}
+.tecla, .display {
+	align-items: center;
+	background: #778899;
+	border-radius: 10px;
+	color: white;
+	box-shadow: 5px 5px 5px black;
+	font-size: 25px;
+	padding: 15px;
+	text-align: center;
+}
+.tecla:active {
+	background: #4F4F4F;
+}
+.display {
+	background: #DCDCDC;
+	grid-area: tela;
+	height: 30px;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+.tecla_7 {
+	grid-area: sete;
+}
+.tecla_8 {
+	grid-area: oito;
+}
+.tecla_9 {
+	grid-area: nove;
+}
+.tecla_Divisao {
+	font-weight: bold;
+	grid-area: divide;
+}
+.tecla_Apagar {
+	background: #008080;
+	font-weight: bold;
+	grid-area: apagar;
+}
+.tecla_4 {
+	grid-area: quatro;
+}
+.tecla_5 {
+	grid-area: cinco;
+}
+.tecla_6 {
+	grid-area: seis
+}
+.tecla_Vezes {
+	font-weight: bold;
+	grid-area: vezes;
+}
+.tecla_Porcentagem {
+	font-weight: bold;
+	grid-area: porcentagem;
+}
+.tecla_1 {
+	grid-area: um;
+}
+.tecla_2 {
+	grid-area: dois;
+}
+.tecla_3 {
+	grid-area: tres;
+}
+.tecla_Menos {
+	font-weight: bold;
+	grid-area: menos;
+}
+.tecla_Igual {
+	font-size: 100px;
+	font-weight: bold;
+	grid-area: igual;
+	padding: 5px;
+}
+.tecla_0 {
+	grid-area: zero;
+}
+.tecla_00 {
+	grid-area: zerozero;
+	padding: 10px;
+}
+.tecla_Ponto {
+	font-weight: bold;
+	grid-area: ponto;	
+}
+.tecla_Mais {
+	background-color: #008080;
+	font-weight: bold;
+	grid-area: mais;
+}
